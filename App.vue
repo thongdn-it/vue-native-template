@@ -1,17 +1,10 @@
 <template>
-  <view class="container">
-    <text class="text-color-primary">My Vue Native App</text>
-  </view>
+  <app-navigator></app-navigator>
 </template>
 
-<style>
-.container {
-  background-color: white;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-.text-color-primary {
-  color: blue;
-}
-</style>
+<script>
+import AppNavigator from './src/navigators/AppNavigator';
+export default {
+  components: { AppNavigator },
+};
+</script>
